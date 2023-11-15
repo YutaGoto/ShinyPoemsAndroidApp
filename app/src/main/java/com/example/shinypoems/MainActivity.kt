@@ -22,7 +22,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting("Android")
+                    Greeting(Constants.ClothPoems.POEM_LISTS.shuffled()[0].body)
                 }
             }
         }
@@ -30,9 +30,9 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
+fun Greeting(body: String, modifier: Modifier = Modifier) {
     Text(
-        text = "Hello $name!",
+        body,
         modifier = modifier
     )
 }
