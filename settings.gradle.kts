@@ -15,4 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "ShinyPoems"
 include(":app")
- 
+include(":wear")
